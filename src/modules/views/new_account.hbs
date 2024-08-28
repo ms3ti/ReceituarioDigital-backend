@@ -1,0 +1,789 @@
+<html lang='pt-br'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='HandheldFriendly' content='True' />
+    <meta
+      name='viewport'
+      content='width=device-width, initial-scale=1.0, viewport-fit=cover'
+    />
+    <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet">
+    <title>MRD</title>
+  </head>
+  <body>
+    <div style="display: block; width: 100%; height: auto;">
+          <img style=" width: 162px; mix-blend-mode: multiply;" src="https://mrd-bucket.s3.us-west-2.amazonaws.com/logo/mrd/mrd-logo2.png" alt="MRD">
+          <p 
+            style="
+              display: block;
+              width: 100%;
+              height: 31px;
+              font-family: 'Avenir', sans-serif;
+              font-style: normal;
+              font-weight: 900;
+              font-size: 24px;
+              line-height: 130%;
+              color: #202D46;
+              flex: none;
+              order: 0;
+              flex-grow: 0;
+              margin-bottom: 8px
+            "
+            >
+              Novo Cadastro
+            </p>
+          <p 
+          style="
+                display: block;
+                width: 500px;
+                height: 42px;
+                font-family: 'Avenir', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 130%;
+                color: #202D46;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                padding: 5px 0 15px 0;"
+          >
+            Confira as informações de novo profissional cadastrado no sistema MRD, para Aprovar ou Rejeitar à conta de acesso dele.
+          </p>
+          <p 
+          style="
+                display: block;
+                width: 500px;
+                height: 42px;
+                font-family: 'Avenir', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 130%;
+                color: #202D46;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                padding: 5px 0 15px 0;"
+          >
+            As informações do novo profissional seguem abaixo:
+          </p>
+          
+        <hr style="margin: 15px 0; width: 100%; height: 1px; background-color: #EDEDF3; border: none"/>
+
+      <div style="margin: 8px 0">
+        <span style="
+                padding-top: 8px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: flex-end;
+                color: #7D899D;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                ">
+                  Dados Pessoais
+                </span><br/>
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">CPF</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ cpf }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Conselho</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ concil }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">UF do Conselho </label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ concilUf }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Nome completo</label>
+          <span 
+             style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ name }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Nome social</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ socialName }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Data de nascimento</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ birthDate }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Sexo biológico</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ sex }}</span>
+        </div>
+
+      </div>
+
+        <hr style="margin: 15px 0; width: 100%; height: 1px; background-color: #EDEDF3; border: none"/>
+
+      <div style="margin: 8px 0">
+         <span style="
+                padding-top: 8px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: flex-end;
+                color: #7D899D;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                ">Contato</span><br/>
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">E-mail</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ email }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Telefone</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ phoneNumber }}</span>
+        </div>
+
+        <hr style="margin: 15px 0; width: 100%; height: 1px; background-color: #EDEDF3; border: none"/>
+
+       <div style="margin: 8px 0">
+         <span style="
+                padding-top: 8px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: flex-end;
+                color: #7D899D;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                ">Especialidade</span><br/>
+          {{#each doctorSpecialty}}
+          <div style="margin-top: 8px;">
+           <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">
+                Nome da especialidade
+            </label>
+                <span 
+                  style="
+                    font-family;: "Ubuntu";
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #202D46;
+                    display: block;"
+                    >{{specialty}}
+                  </span>
+              <label 
+                style="
+                  margin-top: 8px;
+                  display: block;
+                  font-family: 'Avenir';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 11px;
+                  line-height: 15px;
+                  color: #7D899D;
+                  "
+                  for="">RQE</label>
+                    <span 
+                      style="
+                        font-family;: "Ubuntu";
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #202D46;
+                        display: block;"
+                        >
+                          {{ registrationNumber }}
+                        </span>
+            </div>
+          {{/each}}
+        </div>
+
+        <hr style="margin: 15px 0; width: 100%; height: 1px; background-color: #EDEDF3; border: none"/>
+
+      <div style="margin-bottom: 20px">
+         <span style="
+                padding-top: 8px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: flex-end;
+                color: #7D899D;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                ">Dados da Empresa</span><br/>
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Nome fantasia</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerName }}</span>
+        </div>
+
+        <div class="description">
+           <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">CNPJ</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ cnpj }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">E-mail</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerEmail }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Telefone 1</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerPhoneNumber }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Telefone 2</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerPhoneNumber2 }}</span>
+        </div>
+      </div>
+
+        <hr style="margin: 15px 0; width: 100%; height: 1px; background-color: #EDEDF3; border: none"/>
+
+       <div style="margin: 8px 0">
+         <span style="
+                padding-top: 8px;
+                font-family: 'Avenir';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: flex-end;
+                color: #7D899D;
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                ">Endereço da empresa</span><br/>
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">CEP</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerCep }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">UF</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerState }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Endereço</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerStreet }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Número</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerNumber }}</span>
+        </div>
+
+        <div class="description">
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Cidade</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerCity }}</span>
+        </div>
+
+        <div class="description">
+           <label 
+            style="
+              margin-top: 8px;
+              display: block;f
+              ont-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Bairro</label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerDistrict }}</span>
+        </div>
+
+        <div>
+          <label 
+            style="
+              margin-top: 8px;
+              display: block;
+              font-family: 'Avenir';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 11px;
+              line-height: 15px;
+              color: #7D899D;
+              "
+            for="">Complemento
+          </label>
+          <span 
+            style="
+              font-family;: "Ubuntu";
+              font-size: 16px;
+              font-weight: 400;
+              color: #202D46;
+              display: block;"
+              >{{ ownerComplement }}</span>
+        </div>
+      </div>
+
+        <hr style="margin: 15px 0; width: 100%; height: 1px; background-color: #EDEDF3; border: none"/>
+
+      <div 
+        style="
+          width: 100%;
+          margin-top: 8px;
+          padding: 15px;
+          display: flex;
+          flex: 1;
+          flex-direction: row;
+          justify-items: center;
+          align-items: center;"
+        >
+        <a href="https://app.meureceituariodigital.com.br/callback/{{personId}}/rejected" 
+          style="
+                text-decoration: none;
+                margin-right: 8px;
+                cursor: pointer;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 0 12px 55px;
+                gap: 6px;
+                width: 160px;
+                height: 48px;
+                background: #FFFFFF;
+                border: 1px solid rgba(215, 42, 52, 0.2);
+                border-radius: 8px;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                "
+        >
+          <span 
+            style="width: 100%;
+                height: 19px;
+                font-family: 'Avenir', sans-serif;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 14px;
+                line-height: 19px;
+                color: #D72A34;
+              ">
+                  Rejeitar
+                </span> 
+        </a>
+        <a href="https://app.meureceituariodigital.com.br/callback/{{personId}}/approved"
+          style="
+                text-decoration: none;
+                margin-left: 8px;
+                cursor: pointer;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 0 12px 55px;
+                gap: 6px;
+                width: 160px;
+                height: 48px;
+                background: #D72A34;
+                border: 1px solid rgba(215, 42, 52, 0.2);
+                border-radius: 8px;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                "
+        >
+          <span 
+            style="width: 100%;
+                height: 19px;
+                font-family: 'Avenir', sans-serif;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 14px;
+                line-height: 19px;
+                color: #FFF;
+              ">
+                  Aprovar
+                </span> 
+        </a>
+      </div>
+
+    </div>
+  </body>
+</html>
