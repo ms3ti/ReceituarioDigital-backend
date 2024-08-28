@@ -1,0 +1,5 @@
+export enum PrescriptionTypeEnum {
+  PRESCRIPTION = 1,
+  CONTROLLED_RECIPE = 2,
+  ANTIMICROBIAL_PRESCRIPTION = 3,
+}

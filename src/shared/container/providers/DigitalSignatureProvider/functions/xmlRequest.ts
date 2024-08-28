@@ -1,0 +1,59 @@
+import { Request } from '../dtos/IRequest.DTO';
+
+export async function xmlRequest(data: Request): Promise<string> {
+  return `
+  <x:Envelope
+  xmlns:x="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:tem="http://tempuri.org/">
+  <x:Header/>
+  <x:Body>
+      <tem:PublicarDocumento>
+        <tem:XmlDocumento>
+        <![CDATA[
+            <AssinaWeb VersaoDados="3.00">
+              <TpAmbiente>${process.env.ENVIRONMENT}</TpAmbiente>
+              <IdChaveAcesso>${process.env.ACCESS_KEY}</IdChaveAcesso>
+              <CpfCnpjPublicador>${process.env.CNPJ_PUBLISH}</CpfCnpjPublicador>
+              <ContaPublicacao>${process.env.CORPORATE_ACCOUNT}</ContaPublicacao>
+              <documento>
+                <DsDocumento>${data.DsDocumento}</DsDocumento>
+                <DsDetalhesDocumento>${data.DsDetalhesDocumento}</DsDetalhesDocumento>
+                <DtLimiteAssinatura>${data.DtLimiteAssinatura}</DtLimiteAssinatura>
+                <InEmailEventos>S</InEmailEventos>
+                <DsSenhaDocumento></DsSenhaDocumento>
+                <MD5Documento>${data.MD5Documento}</MD5Documento>
+                <DsCodigoVerificacao></DsCodigoVerificacao>
+                <InMarcaDagua>P</InMarcaDagua>
+                <Lin1MarcaDagua></Lin1MarcaDagua>
+                <Lin2MarcaDagua></Lin2MarcaDagua>
+                <FontSizeMarcaDagua>8</FontSizeMarcaDagua>
+                <FontColorMarcaDagua>1-GRAY</FontColorMarcaDagua>
+                <DeslocamentoMarcaDagua></DeslocamentoMarcaDagua>
+                <LateralMarcaDagua>3</LateralMarcaDagua>
+                <InPrecedenciaEtapas>S</InPrecedenciaEtapas>
+                <DsEmailReplyTo>manoelmecat@gmail.com</DsEmailReplyTo>
+                <participantes>
+                    <participante>
+                        <CpfCnpj>${data.participantes.CpfCnpj}</CpfCnpj>
+                        <DsNome>${data.participantes.DsNome}</DsNome>
+                        <DsAliasPerfil>Contratante</DsAliasPerfil>
+                        <DsEmail>${data.participantes.DsEmail}</DsEmail>
+                        <DsTelefoneContato>${data.participantes.DsTelefoneContato}</DsTelefoneContato>
+                        <TpAssinatura>ICP</TpAssinatura>
+                        <Perfil>S</Perfil>
+                        <DsIdioma>pt</DsIdioma>
+                        <NrEtapa>0</NrEtapa>
+                        <InPrecedenciaParticipantes>N</InPrecedenciaParticipantes>
+                        <NrAssinaturasEtapa>1</NrAssinaturasEtapa>
+                    </participante>
+                  </participantes>
+              </documento>
+          </AssinaWeb>
+          ]]>
+        </tem:XmlDocumento>
+        <tem:pdfBase64>${data.pdfBase64}</tem:pdfBase64>
+      </tem:PublicarDocumento>
+  </x:Body>
+</x:Envelope>
+  `;
+}
