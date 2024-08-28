@@ -1,0 +1,13 @@
+{
+    "service": {
+        "name": "MRD",
+        "tags": ["MRD"],
+        "port": 3333,
+        "check": {
+            "name": "Health Check Node",
+            "http": "http://localhost:3333/health",
+            "interval": "10s",
+            "timeout": "5s"
+        }
+    }
+}
